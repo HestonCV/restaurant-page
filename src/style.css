@@ -1,0 +1,93 @@
+body {
+  font-family: "Tsukimi Rounded", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  --headerBgc: rgb(170, 170, 170);
+  --centerBgc: rgb(18, 18, 18);
+}
+
+#content {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 170px 1fr;
+  background-color: var(--centerBgc);
+  color: white;
+}
+
+/* header styles */
+#header {
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 4rem;
+  text-align: center;
+  background-color: var(--headerBgc);
+}
+
+#title {
+  color: white;
+  font-weight: 900;
+}
+
+#tabs {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  font-size: 1.8rem;
+}
+
+li {
+  list-style-type: none;
+  background-color: var(--headerBgc);
+  padding: 5px 20px;
+  border: 1px solid white;
+  border-bottom: none;
+  cursor: pointer;
+  color: rgb(64, 64, 64);
+}
+
+#active-tab {
+  background-color: var(--centerBgc);
+  color: white;
+}
+
+/* center styles */
+
+#center {
+  display: flex;
+  background: url("./bgImage.jpg");
+}
+#center > div {
+  width: 100%;
+  padding-top: 200px;
+  background-color: rgba(18, 18, 18, 0.743);
+  font-size: 4rem;
+  text-align: center;
+}
+
+#options {
+  font-size: 2rem;
+}
+
+#motto {
+  color: rgb(201, 201, 201);
+  font-size: 1.5rem;
+}
+
+/* footer styles */
+#footer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgb(201, 201, 201);
+  font-size: 1.4rem;
+}
