@@ -17,7 +17,7 @@ body {
 }
 
 /* header styles */
-#header {
+.header {
   padding: 10px 0 0 0;
   display: flex;
   flex-direction: column;
@@ -27,12 +27,12 @@ body {
   background-color: var(--headerBgc);
 }
 
-#title {
+.title {
   color: white;
   font-weight: 900;
 }
 
-#tabs {
+.tabs {
   align-self: center;
   display: flex;
   justify-content: center;
@@ -50,18 +50,18 @@ li {
   color: rgb(64, 64, 64);
 }
 
-#active-tab {
+.active-tab {
   background-color: var(--centerBgc);
   color: white;
 }
 
 /* center styles */
 
-#center {
+.center {
   display: flex;
   background: url("./bgImage.jpg");
 }
-#center > div {
+.center > div {
   width: 100%;
   padding-top: 200px;
   background-color: rgba(18, 18, 18, 0.743);
@@ -69,17 +69,17 @@ li {
   text-align: center;
 }
 
-#options {
+.options {
   font-size: 2rem;
 }
 
-#motto {
+.motto {
   color: rgb(201, 201, 201);
   font-size: 1.5rem;
 }
 
 /* footer styles */
-#footer {
+.footer {
   position: absolute;
   display: flex;
   justify-content: center;

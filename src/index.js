@@ -1,7 +1,6 @@
-import initPage from "./initPage.js";
+import initPage from "./initPage";
+import loadHomePage from "./homePage";
 import "./style.css";
-import backgroundImage from "./bgImage.jpg";
-
-console.log("testing webpack");
 
 initPage();
+loadHomePage();
