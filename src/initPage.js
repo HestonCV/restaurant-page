@@ -1,4 +1,7 @@
 import createElement from "./createElement";
+import loadHomePage from "./homePage";
+import loadMenuPage from "./menuPage";
+import clearContent from "./clearContent";
 
 function initPage() {
   const content = document.getElementById("content");
@@ -26,28 +29,40 @@ function initPage() {
   });
 
   // create tab elements and append them to tabsDiv
-  createElement({
+
+  // create home tab and add event listener to load homepage
+  const homeTab = createElement({
     element: "li",
     id: "home-tab",
     className: "tab",
     textContent: "Home",
     parent: tabsDiv,
   });
-  createElement({
+  homeTab.addEventListener("click", () => {
+    clearContent();
+    loadHomePage();
+  });
+
+  // create menu tab and add event listener to load menupage
+  const menuTab = createElement({
     element: "li",
     id: "menu-tab",
     className: "tab",
     textContent: "Menu",
     parent: tabsDiv,
   });
-  createElement({
+  menuTab.addEventListener("click", () => {
+    clearContent();
+    loadMenuPage();
+  });
+  const infoTab = createElement({
     element: "li",
     id: "info-tab",
     className: "tab",
     textContent: "Info",
     parent: tabsDiv,
   });
-  createElement({
+  const reserveTab = createElement({
     element: "li",
     id: "reserve-tab",
     className: "tab",

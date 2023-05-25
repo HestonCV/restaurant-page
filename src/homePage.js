@@ -4,6 +4,7 @@ function loadHomePage() {
   const centerDiv = document.querySelector(".center");
   const div = createElement({
     element: "div",
+    className: "home",
     textContent: "Japanese Cuisine",
     parent: centerDiv,
   });

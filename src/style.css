@@ -1,6 +1,6 @@
 body {
+  position: relative;
   font-family: "Tsukimi Rounded", sans-serif;
-  height: 100vh;
   margin: 0;
   padding: 0;
 
@@ -9,7 +9,6 @@ body {
 }
 
 #content {
-  height: 100%;
   display: grid;
   grid-template-rows: 170px 1fr;
   background-color: var(--centerBgc);
@@ -59,14 +58,21 @@ li {
 
 .center {
   display: flex;
+  height: 100%;
   background: url("./bgImage.jpg");
 }
 .center > div {
   width: 100%;
-  padding-top: 200px;
   background-color: rgba(18, 18, 18, 0.743);
   font-size: 4rem;
   text-align: center;
+}
+
+/* home tab styles */
+
+.home {
+  height: calc(100vh - 370px);
+  padding-top: 200px;
 }
 
 .options {
@@ -76,6 +82,44 @@ li {
 .motto {
   color: rgb(201, 201, 201);
   font-size: 1.5rem;
+}
+
+/* menu tab styles */
+.menu {
+  display: grid;
+  padding: 60px 150px 75px 150px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.menu > div {
+  background-color: rgb(149, 141, 141);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.menu p {
+  margin: 0;
+  padding: 0;
+}
+
+.menu > div > .name {
+  font-size: 2rem;
+}
+
+.menu > div > .price {
+  font-size: 1.1rem;
+  margin: 10px 0 20px 0;
+  font-style: italic;
+}
+
+.menu > div > .description {
+  font-size: 1.3rem;
 }
 
 /* footer styles */
