@@ -5,4 +5,4 @@ import loadMenuPage from "./menuPage";
 import clearContent from "./clearContent";
 
 initPage();
-loadMenuPage();
+loadHomePage();

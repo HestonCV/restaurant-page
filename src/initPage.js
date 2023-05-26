@@ -1,6 +1,7 @@
 import createElement from "./createElement";
 import loadHomePage from "./homePage";
 import loadMenuPage from "./menuPage";
+import loadInfoPage from "./infoPage";
 import clearContent from "./clearContent";
 
 function initPage() {
@@ -61,6 +62,10 @@ function initPage() {
     className: "tab",
     textContent: "Info",
     parent: tabsDiv,
+  });
+  infoTab.addEventListener("click", () => {
+    clearContent();
+    loadInfoPage();
   });
   const reserveTab = createElement({
     element: "li",
